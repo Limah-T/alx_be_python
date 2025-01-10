@@ -1,5 +1,5 @@
 from arithmetic_operations import perform_operation
-from shopping_list_manager import display_menu, check_empty_list
+from shopping_list_manager import display_menu, check_empty_list, shopping_list
 
 # print("Arithmetic Operations")
 # num1 = float(input("Enter the first number: "))
@@ -7,7 +7,7 @@ from shopping_list_manager import display_menu, check_empty_list
 # operation = input("Enter the operation (add, subtract, multiply, divide): ").strip().lower()
 # operations = perform_operation(num1, num2, operation)
 # print(operations)
-shopping_list = []
+
 while True:
     display_menu()
     choice = input("Enter your choice: ")

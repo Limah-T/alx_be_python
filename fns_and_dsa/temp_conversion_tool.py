@@ -1,8 +1,8 @@
 # Conversion of temperature to fahrenheit
-FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9 
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9 
 
 # Conversion of temperature to celsius
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
 def convert_to_celsius(fahrenheit):
     global CELSIUS_TO_FAHRENHEIT_FACTOR

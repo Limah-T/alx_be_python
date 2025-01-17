@@ -4,7 +4,19 @@ class Book:
         self.author = author
         self._is_checked_out = True
 
-    def return_book(self, title):
+    def check_out_book(self):
+        if self._books == []:
+            print("No books in the library.")
+            return False
+        
+        for check in self._books:
+            if self.title in check:
+                self.checked_book = check
+                self._books.remove(check)
+                self.check_out_book = True
+                return True
+            
+    def return_book(self):
         self._books.append(self.checked_book)
 
 class Library():

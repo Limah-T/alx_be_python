@@ -8,6 +8,10 @@ class Library():
     def __init__(self):
         self._books = []
         self.checked_book = None
+
+    def return_book(self, title):
+        if title in self.checked_book:
+            self._books.append(self.checked_book)
     
     def add_book(self, addbook):
         book = f"{addbook.title} by {addbook.author}"
@@ -28,9 +32,6 @@ class Library():
         print("No such book in the library.")
         return False
 
-    def return_book(self, title):
-        if title in self.checked_book:
-            self._books.append(self.checked_book)
 
     def list_available_books(self):
         for book in self._books:

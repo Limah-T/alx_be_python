@@ -5,7 +5,7 @@ def main():
     command = input("Commands: deposit, withdraw, display: ").lower().strip()
     if command == "deposit":
         amount = float(input("How much do you want to deposit: "))
-        account.deposit(amount)
+        print(account.deposit(amount))
     elif command == "withdraw":
         amount = float(input("How much do you want to withdraw: "))
         if account.withdraw(amount):

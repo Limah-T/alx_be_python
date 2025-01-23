@@ -10,7 +10,7 @@ class Book:
     
     def __repr__(self):
         """Returns the official representation of the object"""
-        return f"Book('{self.title}', '{self.author}', '{self.year}')"
+        return f"Book('{self.title}', '{self.author}', {self.year})"
     
     def __del__(self):
         """Deletes the instance of the class after executing"""

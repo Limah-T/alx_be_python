@@ -13,12 +13,12 @@ class Rectangle(Shape):
         return self.length * self.width
     
 class Circle(Shape):
-    def __init__(self, length):
-        self.length = length
+    def __init__(self, radius):
+        self.radius = radius
 
     def area(self):
         """Formula is πr2 where π=3.14159"""
-        shape_area = math.pi * (self.length * self.length)
+        shape_area = math.pi * (self.radius * self.radius)
         return shape_area
 
 

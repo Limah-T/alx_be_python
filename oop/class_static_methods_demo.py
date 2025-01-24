@@ -1,5 +1,5 @@
 class Calculator:
-    calculator_type = "Arithmetric Operations"
+    calculation_type = "Arithmetric Operations"
 
     @classmethod
     def multiply(cls, a, b):

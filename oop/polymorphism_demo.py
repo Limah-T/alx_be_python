@@ -18,7 +18,7 @@ class Circle(Shape):
 
     def area(self):
         """Formula is πr2 where π=3.14159"""
-        shape_area = math.pi * (self.radius * self.radius)
+        shape_area = math.pi * (self.radius ** 2)
         return shape_area
 
 
